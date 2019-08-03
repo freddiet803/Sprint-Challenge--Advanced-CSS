@@ -17,3 +17,4 @@ function myFunction() {
 window.onscroll = function() {
   myFunction();
 };
+//might have something to do with the mixin but makes no sense when run in console, offsetTop has null values

@@ -266,6 +266,19 @@ footer {
     margin: 4% auto;
   }
 }
+@media (max-width: 500px) {
+  .home #cf {
+    position: relative;
+  }
+  .home #cf img {
+    position: relative;
+    left: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  .home #cf img.bottom:hover {
+    opacity: 0;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
