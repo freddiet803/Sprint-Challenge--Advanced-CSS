@@ -1,1 +1,46 @@
 // Navigation code here
+
+.space-header {
+  .background-sand; /*use of mixin*/
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: solid 1px @nav-border;
+  height: 10rem;
+  display: flex;
+  justify-items: center;
+  flex-flow: row wrap;
+  position: sticky;
+
+  @media @phone {
+    width: 100%;
+  }
+
+  h2 {
+    .width-of-container(); /*use of mixin*/
+    text-align: center;
+    margin-top: 1%;
+    @media @phone {
+      margin-top: 2%;
+    }
+  }
+
+  .space-nav {
+    .width-of-container();
+    /*use of mixin*/
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1%;
+
+    a {
+      text-decoration: none;
+      font-size: 1.5rem;
+      padding: 0 1%;
+      color: @header-font-color;
+      font-weight: 200;
+      @media @phone {
+        padding: 0 4%;
+      }
+    }
+  }
+}
